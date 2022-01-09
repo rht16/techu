@@ -7,7 +7,7 @@ const student = require('./src/controllers/student_controller')
 const task = require('./src/controllers/taskController')
 const app = express();
 app.use(cors());
-
+//conection
 const connect = require('./src/config/db');
 app.use(express.json());
 const PORT = process.env.PORT || 9900;
