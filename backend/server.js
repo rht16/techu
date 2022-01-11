@@ -11,8 +11,10 @@ app.use(cors());
 const connect = require('./src/config/db');
 app.use(express.json());
 const PORT = process.env.PORT || 9900;
+//End Points
  app.use('/', student);
  app.use('/', task);
+ //connection
 app.listen(PORT, async () => {
     console.log("starting");
     await connect();
